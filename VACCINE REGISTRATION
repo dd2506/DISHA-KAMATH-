@@ -1,0 +1,135 @@
+#include <stdio.h>
+#include<string.h>
+void pr()
+{
+    printf("\n*********************************************\n");
+}
+void a()
+{
+    printf("\nCHANGES SAVED SUCCESSFULLY");
+}
+void main()
+{
+   int ch=0;
+struct a{
+          int aadhaarno;
+          int age;
+          char na[20];
+          char lastna[20];
+          char gender[20];
+          int mobno;
+          int dose;
+          char bloodgrp[20];
+         };
+
+struct a reco;
+printf  ("\t\t\t*****************************************************" );
+printf  ("\n\t\t\t       V A C C I N E   R E G I S T R A T I O N  "     );
+printf  ("\n\t\t\t****************************************************" );
+while(ch!=4)
+ {
+    printf("\n\nM E N U");
+    pr();
+    printf("\n\nEnter 1 to Add new record");
+    printf("\nEnter 2 to View Details");
+    printf("\nEnter 3 to Edit Data");
+    printf("\nEnter 4 to Exit");
+    printf("\n\n");
+    pr();
+    printf("\n\nEnter your choice :");
+    scanf("%d",&ch);
+
+
+   if(ch==1)
+    {
+   
+       printf("\n\nE N T E R  D E T A I L S ");
+       pr();
+       printf("\n\nFirst Name:");
+       scanf("%s",reco.na);
+       printf("\nLast Name:");
+       scanf("%s",reco.lastna);
+       printf("\nAge:");
+       scanf("%d",&reco.age);
+       printf("\nGender(M/F/OTHERS):");
+       scanf("%s",reco.gender);
+       printf("\nBlood Group:");
+       scanf("%s",reco.bloodgrp);
+       printf("\nAadhaar no:");
+       scanf("%d",&reco.aadhaarno);
+       printf("\nDose(1/2/BOOSTER):");
+       scanf("%d",&reco.dose);
+       printf("\nMobile no:");
+       scanf("%d",&reco.mobno);
+       printf("\n\nYOUR DATA HAS BEEN SUCCESSFULLY SAVED");
+       pr();
+    }
+
+   if(ch==2)
+    {
+   
+       printf("\n\n V I E W  D A T A");
+       pr();
+       printf("\n\nFirst Name:%s \nLast Name:%s \nAge:%d \nGender:%s",reco.na,reco.lastna,reco.age,reco.gender);
+       printf("\nBlood Group:%s \nDose:%d \nAadhaar no:%d \nMobile no:%d",reco.bloodgrp,reco.dose,reco.aadhaarno,reco.mobno);
+ 
+    }
+   if(ch==3)
+    {
+     
+      printf("\nEnter 1 to edit First Name and Last Name");
+      printf("\nEnter 2 to edit Age");
+      printf("\nEnter 3 to edit Aadhaar no");
+      printf("\nEnter 4 to edit Mobile no");
+      printf("\nEnter 5 to edit Blood Group");
+      pr();
+      printf("\n\nEnter your choice:");
+      scanf("%d",&ch);
+    
+        if(ch==1)
+         {
+            printf("\nFirst Name:%s \nLast Name:%s",reco.na,reco.lastna);
+            printf("\n\nEnter new First name:");
+            scanf("%s",reco.na);
+            printf("Enter new Last name:");
+            scanf("%s",reco.lastna);
+            a();
+         }
+ 
+        if(ch==2)
+        {
+            printf("\nAge:%d",reco.age);
+            printf("\n\nEnter new Age:");
+            scanf("%d",&reco.age);
+            a();
+        }
+         if(ch==3)
+        {
+            printf("\nAadhaar no:%d",reco.aadhaarno);
+            printf("\n\nEnter New Aadhaar no:");
+            scanf("%d",&reco.aadhaarno);
+            a();
+        }
+         if(ch==4)
+        {
+             printf("\nMobile no:%d",reco.mobno);
+             printf("\n\nEnter New Mobile no:");
+             scanf("%d",&reco.mobno);
+             a();
+        }
+        if(ch==5)
+        {
+            printf("\nBlood Group:%s",reco.bloodgrp);
+            printf("\n\nEnter new Blood Group:");
+            scanf("%s",reco.bloodgrp);
+            a();
+        }
+     
+   }
+ }
+}
+  
+  
+ 
+
+
